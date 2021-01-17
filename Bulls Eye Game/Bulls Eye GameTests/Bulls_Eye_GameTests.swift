@@ -21,17 +21,16 @@ class Bulls_Eye_GameTests: XCTestCase {
         game = nil
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        XCTAssertEqual(game?.points(sliderValue: 45), 99)
+    func testScorePositive() {
+        let guess = (game?.target ?? Int()) + 10
+        let score = game?.points(sliderValue: guess)
+        XCTAssertEqual(score, 90)
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func testScoreNegativetive() {
+        let guess = (game?.target ?? Int()) - 5
+        let score = game?.points(sliderValue: guess)
+        XCTAssertEqual(score, 95)
     }
 
 }
