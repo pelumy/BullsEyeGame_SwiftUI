@@ -31,7 +31,7 @@ struct ContentView: View {
                 Text("100")
                     .bold()
             }
-            @State var rounded = Int(sliderValue.rounded())
+            let rounded = Int(sliderValue.rounded())
             Button(action: {
                 self.alertIsVisible = true
             }) {
