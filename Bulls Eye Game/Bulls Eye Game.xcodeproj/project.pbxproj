@@ -95,10 +95,9 @@
 		0408F7F025B2288F0012689A /* Bulls Eye Game */ = {
 			isa = PBXGroup;
 			children = (
-				0408F7F125B2288F0012689A /* Bulls_Eye_GameApp.swift */,
-				0408F7F325B2288F0012689A /* ContentView.swift */,
-				0408F7F525B228920012689A /* Assets.xcassets */,
-				0408F7FA25B228920012689A /* Info.plist */,
+				04C1D0C925B4F06D00F34784 /* App */,
+				04C1D0C825B4F05500F34784 /* Views */,
+				04C1D0C725B4F04B00F34784 /* Models */,
 				0408F7F725B228920012689A /* Preview Content */,
 			);
 			path = "Bulls Eye Game";
@@ -128,6 +127,31 @@
 				0408F81025B228920012689A /* Info.plist */,
 			);
 			path = "Bulls Eye GameUITests";
+			sourceTree = "<group>";
+		};
+		04C1D0C725B4F04B00F34784 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		04C1D0C825B4F05500F34784 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0408F7F325B2288F0012689A /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		04C1D0C925B4F06D00F34784 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				0408F7F125B2288F0012689A /* Bulls_Eye_GameApp.swift */,
+				0408F7F525B228920012689A /* Assets.xcassets */,
+				0408F7FA25B228920012689A /* Info.plist */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -421,7 +445,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Bulls Eye Game/Preview Content\"";
 				DEVELOPMENT_TEAM = WW6582Q94G;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "Bulls Eye Game/Info.plist";
+				INFOPLIST_FILE = "Bulls Eye Game/App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -443,7 +467,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Bulls Eye Game/Preview Content\"";
 				DEVELOPMENT_TEAM = WW6582Q94G;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "Bulls Eye Game/Info.plist";
+				INFOPLIST_FILE = "Bulls Eye Game/App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
